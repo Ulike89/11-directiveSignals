@@ -8,7 +8,7 @@ import { UsersService } from '../../services/users.service';
   templateUrl: './user-info-page.component.html',
   styleUrl: './user-info-page.component.css'
 })
-export class UserInfoPageComponent {
+export default class UserInfoPageComponent {
   private usersService = inject(UsersService);
   public userId = signal(1);
 

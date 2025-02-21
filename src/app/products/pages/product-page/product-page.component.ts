@@ -8,7 +8,7 @@ import { CustomLabelDirective } from '../../../shared/directives/custom-label.di
   templateUrl: './product-page.component.html',
   styleUrl: './product-page.component.css'
 })
-export class ProductPageComponent {
+export  default class ProductPageComponent {
   // constructor( private fb: FormBuilder ) {}
   private fb = inject(FormBuilder);
 

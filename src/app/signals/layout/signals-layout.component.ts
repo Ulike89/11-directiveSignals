@@ -7,6 +7,6 @@ import { SideMenuComponent } from '../components/side-menu/side-menu.component';
   templateUrl: './signals-layout.component.html',
   styleUrl: './signals-layout.component.css'
 })
-export class SignalsLayoutComponent {
+export default class SignalsLayoutComponent {
 
 }

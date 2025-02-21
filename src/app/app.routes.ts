@@ -3,23 +3,23 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path: 'products/product',
-        loadComponent: () => import('./products/pages/product-page/product-page.component').then(c => c.ProductPageComponent)
+        loadComponent: () => import('./products/pages/product-page/product-page.component')
     },
     {
         path: 'signals',
-        loadComponent: () => import('./signals/layout/signals-layout.component').then(c => c.SignalsLayoutComponent),
+        loadComponent: () => import('./signals/layout/signals-layout.component'),
         children: [
           {
             path: 'counter',
-            loadComponent: () => import('./signals/pages/counter-page/counter-page.component').then(c => c.CounterPageComponent)
+            loadComponent: () => import('./signals/pages/counter-page/counter-page.component')
           },
           {
             path: 'user-info',
-            loadComponent: () => import('./signals/pages/user-info-page/user-info-page.component').then(c => c.UserInfoPageComponent)
+            loadComponent: () => import('./signals/pages/user-info-page/user-info-page.component')
           },
           {
             path: 'properties',
-            loadComponent: () => import('./signals/pages/properties-page/properties-page.component').then(c => c.PropertiesPageComponent)
+            loadComponent: () => import('./signals/pages/properties-page/properties-page.component')
           },
           {
             path: '**',

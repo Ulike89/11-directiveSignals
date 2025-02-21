@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './properties-page.component.html',
   styleUrl: './properties-page.component.css'
 })
-export class PropertiesPageComponent {
+export default class PropertiesPageComponent {
   public counter = signal(10);
 
   public user = signal<User>( {
